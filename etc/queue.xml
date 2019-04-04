@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/queue.xsd">
+    <broker topic="customcatalog.update.product.queue.topic" exchange="magento" type="db">
+        <queue name="customcatalog.update.product.queue"
+               consumer="customCatalogProductUpdateConsumer"
+               handler="QBees\CustomCatalog\Api\ProductRepositoryInterface::update"
+        />
+    </broker>
+</config>

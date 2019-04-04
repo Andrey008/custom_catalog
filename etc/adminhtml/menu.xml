@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="QBees_CustomCatalog::custom_catalog_product" title="Custom Catalog" translate="title" module="QBees_CustomCatalog" sortOrder="20" parent="Magento_Catalog::inventory" action="customcatalog/product/" resource="QBees_CustomCatalog::product" />
+    </menu>
+</config>
